@@ -1,0 +1,13 @@
+{
+    "name": "firebase-admin-hx",
+    "url" : "https://github.com/dmitryhryppa/assimp-kha",
+    "license": "MIT",
+    "tags": ["firebase", "nodejs"],
+    "description": "Externs for firebase Admin SDK (NodeJS)",
+    "version": "0.1.0",
+    "classPath": "src",
+    "releasenote": "WIP",
+    "contributors": ["Dmitry Hryppa"],
+    "dependencies": {
+    }
+  }
