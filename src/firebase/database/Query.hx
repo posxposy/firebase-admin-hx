@@ -32,8 +32,10 @@ extern class Query
     @:overload(function(eventType:String, callback:DatabaseSnapshot->?Null<String>->Void, ?cancelCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
     public function on(eventType:String, callback:DatabaseSnapshot->?Null<String>->Void, ?cancelCallbackOrContext:Dynamic, ?context:Dynamic):Void;
     
-    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->?Null<String>->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
-    public function once(eventType:String, ?successCallback:DatabaseSnapshot->?Null<String>->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<Dynamic>;
+    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->String->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
+    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
+    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->String->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<Dynamic> {} )
+    public function once(eventType:String, ?successCallback:DatabaseSnapshot->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<Dynamic>;
     
     public function orderByChild(path:String):Query;
     public function orderByKey():Query;

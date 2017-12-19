@@ -15,7 +15,7 @@ extern class DatabaseSnapshot
     public function child(path:String):DatabaseSnapshot;
     public function exist():Bool;
     public function exportVal():Dynamic;
-    public function forEach(action:DatabaseSnapshot):Bool;
+    public function forEach(action:DatabaseSnapshot->Void):Bool;
     public function getPriority(path:String):Bool;
     public function hasChildren():Bool;
     public function numChildren():Int;
