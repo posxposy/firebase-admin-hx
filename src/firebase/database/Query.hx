@@ -27,15 +27,15 @@ extern class Query
     public function limitToFirst(other:Query):Query;
     public function limitToLast(other:Query):Query;
     
-    public function off(eventType:String, callback:DatabaseSnapshot->?Null<String>->Void, ?context:Dynamic):Void;
+    public function off(eventType:String, callback:DataSnapshot->?Null<String>->Void, ?context:Dynamic):Void;
     
-    @:overload(function(eventType:String, callback:DatabaseSnapshot->?Null<String>->Void, ?cancelCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
-    public function on(eventType:String, callback:DatabaseSnapshot->?Null<String>->Void, ?cancelCallbackOrContext:Dynamic, ?context:Dynamic):Void;
+    @:overload(function(eventType:String, callback:DataSnapshot->String->Void, ?cancelCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
+    public function on(eventType:String, callback:DataSnapshot->Void, ?cancelCallbackOrContext:Dynamic, ?context:Dynamic):Void;
     
-    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->String->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
-    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
-    @:overload(function(eventType:String, ?successCallback:DatabaseSnapshot->String->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<Dynamic> {} )
-    public function once(eventType:String, ?successCallback:DatabaseSnapshot->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<Dynamic>;
+    @:overload(function(eventType:String, ?successCallback:DataSnapshot->String->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
+    @:overload(function(eventType:String, ?successCallback:DataSnapshot->Void, ?failureCallbackOrContext:Dynamic->Void, ?context:Dynamic):Query {} )
+    @:overload(function(eventType:String, ?successCallback:DataSnapshot->String->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<DataSnapshot> {} )
+    public function once(eventType:String, ?successCallback:DataSnapshot->Void, ?failureCallbackOrContext:Dynamic, ?context:Dynamic):Promise<DataSnapshot>;
     
     public function orderByChild(path:String):Query;
     public function orderByKey():Query;
