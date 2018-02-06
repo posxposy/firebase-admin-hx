@@ -24,8 +24,8 @@ extern class Query
     public function equalTo(value:Null<String>, ?key:String):Query;
     
     public function isEqual(other:Query):Bool;
-    public function limitToFirst(other:Query):Query;
-    public function limitToLast(other:Query):Query;
+    public function limitToFirst(limit:Int):Query;
+    public function limitToLast(limit:Int):Query;
     
     public function off(eventType:String, callback:DataSnapshot->?Null<String>->Void, ?context:Dynamic):Void;
     
