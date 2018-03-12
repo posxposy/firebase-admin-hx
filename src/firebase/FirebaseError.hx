@@ -1,15 +1,10 @@
 package firebase;
 
-/**
- * ...
- * @author Dmitry Hryppa	http://themozokteam.com/
- */
 @:native('admin.FirebaseError')
-extern class FirebaseError 
-{
-    var code:String;
-    var message:String;
-    var stack:String;
+extern class FirebaseError {
+    public var code:String;
+    public var message:String;
+    public var stack:String;
     
     public function toJSON():Dynamic;
 }

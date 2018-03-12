@@ -5,13 +5,8 @@ import firebase.messaging.Messaging;
 import firebase.storage.Storage;
 import js.Promise;
 
-/**
- * ...
- * @author Dmitry Hryppa	http://themozokteam.com/
- */
 @:native('admin.app.App')
-extern class App 
-{
+extern class App {
     public var name:String;
     
     public function auth():Auth;

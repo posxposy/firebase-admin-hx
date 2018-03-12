@@ -1,14 +1,8 @@
 package firebase.database;
 import js.Promise;
 
-/**
- * ...
- * @author Dmitry Hryppa	http://themozokteam.com/
- */
-
 @:native('admin.database.Query')
-extern class Query 
-{
+extern class Query {
     public var ref:Reference;
     
     @:overload(function(value:Null<Int>, ?key:String):Query {} )

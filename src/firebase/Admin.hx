@@ -2,14 +2,8 @@ package firebase;
 import firebase.Credential;
 import firebase.admin.App;
 
-/**
- * ...
- * @author Dmitry Hryppa	http://themozokteam.com/
- */
-
 @:native('admin')
-extern class Admin 
-{
+extern class Admin {
     public var SDK_VERSION:String;
     public var credential:Credential;
     

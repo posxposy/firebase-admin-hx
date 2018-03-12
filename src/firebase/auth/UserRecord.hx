@@ -1,13 +1,7 @@
 package firebase.auth;
 
-/**
- * ...
- * @author Dmitry Hryppa	http://themozokteam.com/
- */
-
 @:native('admin.auth.UserRecord')
-extern class UserRecord 
-{
+extern class UserRecord {
     public var customClaims:Dynamic;
     public var disabled:Bool;
     public var displayName:String;
