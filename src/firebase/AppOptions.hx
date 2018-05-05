@@ -1,7 +1,7 @@
 package firebase;
 
 typedef AppOptions = {
-    ?credential:Credential,
+    ?credential:Credential.AppCredential,
     ?databaseAuthVariableOverride:Dynamic,
     ?databaseURL:String,
     ?projectId:String,
