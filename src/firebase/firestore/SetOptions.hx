@@ -1,5 +1,5 @@
 package firebase.firestore;
 
 typedef SetOptions = {
-    merge:Bool
+	merge:Bool
 }
