@@ -1,6 +1,6 @@
 package firebase;
 
-import firebase.Credential.AppCredential;
+import firebase.storage.Storage;
 import firebase.admin.App;
 
 @:native('admin')
@@ -8,6 +8,7 @@ import firebase.admin.App;
 extern class Admin {
 	public static var SDK_VERSION:String;
 	public static var apps:Array<App>;
-	public static function initializeApp (options:AppOptions):Void;
-	public static function app (?name:String):App;
+	public static function initializeApp(options:AppOptions):Void;
+	public static function app(?name:String):App;
+	public static function storage():Storage;
 }
