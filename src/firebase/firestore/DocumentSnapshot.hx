@@ -4,5 +4,5 @@ package firebase.firestore;
 extern class DocumentSnapshot {
 	public var exists:Bool;
 	public var ref:DocumentReference;
-	public function data (?options:Dynamic):Dynamic;
+	public function data(?options:Dynamic):Dynamic;
 }

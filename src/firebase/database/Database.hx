@@ -2,7 +2,7 @@ package firebase.database;
 
 @:native('admin.database.Database')
 extern class Database {
-	@:overload(function ():Reference {
+	@:overload(function():Reference {
 	})
-	public function ref (path:String):Reference;
+	public function ref(path:String):Reference;
 }

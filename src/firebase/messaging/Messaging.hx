@@ -4,7 +4,7 @@ import js.Promise;
 
 @:native('admin.messaging.Messaging')
 extern class Messaging {
-	public function send (send:Message):Promise<String>;
+	public function send(send:Message):Promise<String>;
 	// legacy
-	public function sendToDevice (registrationToken:String, payload:MessagingPayload, options:MessagingOptions):Promise<MessagingDevicesResponse>;
+	public function sendToDevice(registrationToken:String, payload:MessagingPayload, options:MessagingOptions):Promise<MessagingDevicesResponse>;
 }

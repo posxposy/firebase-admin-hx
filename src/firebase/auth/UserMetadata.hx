@@ -4,5 +4,5 @@ package firebase.auth;
 extern class UserMetadata {
 	public var creationTime:String;
 	public var lastSignInTime:String;
-	public function toJSON ():Dynamic;
+	public function toJSON():Dynamic;
 }

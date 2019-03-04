@@ -14,5 +14,5 @@ extern class UserRecord {
 	public var photoURL:String;
 	public var providerData:UserInfo;
 	public var uid:String;
-	public function toJSON ():Dynamic;
+	public function toJSON():Dynamic;
 }

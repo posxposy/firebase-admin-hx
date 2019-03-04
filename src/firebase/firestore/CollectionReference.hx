@@ -6,7 +6,7 @@ import js.Promise;
 extern class CollectionReference extends Query {
 	public var id:String;
 	public var parent:DocumentReference;
-	public function add (data:Dynamic):Promise<DocumentReference>;
+	public function add(data:Dynamic):Promise<DocumentReference>;
 
 	/**
 	 * Gets a DocumentReference for the document within the collection at the specified path.
@@ -14,5 +14,5 @@ extern class CollectionReference extends Query {
 	 * @param documentPathA slash-separated path to a document.
 	 * @return
 	 */
-	public function doc (?documentPath:String):DocumentReference;
+	public function doc(?documentPath:String):DocumentReference;
 }

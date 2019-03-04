@@ -14,7 +14,7 @@ extern class Query {
 	 * @param snapshotOrVarArgs The snapshot of the document the query results should end at or the field values to end this query at, in order of the query's order by.
 	 * @return The created query
 	 */
-	public function endAt (snapshotOrVarArgs:DocumentSnapshot):Query;
+	public function endAt(snapshotOrVarArgs:DocumentSnapshot):Query;
 
 	/**
 	 * Creates a new query where the results end before the provided document (exclusive).
@@ -23,20 +23,20 @@ extern class Query {
 	 * @param snapshotOrVarArgs The snapshot of the document the query results should end at or the field values to end this query at, in order of the query's order by.
 	 * @return The created query
 	 */
-	public function endBefore (snapshotOrVarArgs:DocumentSnapshot):Query;
+	public function endBefore(snapshotOrVarArgs:DocumentSnapshot):Query;
 
 	/**
 	 * Executes the query and returns the results as a QuerySnapshot
 	 * @return A promise that will be resolved with the results of the query.
 	 */
-	public function get ():QuerySnapshot;
+	public function get():QuerySnapshot;
 
 	/**
 	 * Creates a new query where the results are limited to the specified number of documents
 	 * @param limit The maximum number of items to return.
 	 * @return The created query.
 	 */
-	public function limit (limit:Float):Query;
+	public function limit(limit:Float):Query;
 
 	/**
 	 * Creates a new query where the results are sorted by the specified field, in descendin or ascending order.
@@ -44,9 +44,9 @@ extern class Query {
 	 * @param directionStr
 	 * @return Optional direction to sort by (asc or desc). If not specified, the default order is ascending.
 	 */
-	@:overload(function (fieldPath:FieldPath, ?directionStr:String):Query {
+	@:overload(function(fieldPath:FieldPath, ?directionStr:String):Query {
 	})
-	public function orderBy (fieldPath:String, ?directionStr:String):Query;
+	public function orderBy(fieldPath:String, ?directionStr:String):Query;
 
 	/**
 	 * Creates a new query where the results start after the provided document (exclusive). The starting position is relative to the order of the query.
@@ -54,7 +54,7 @@ extern class Query {
 	 * @param snapshotOrVarArgs The snapshot of the document to start after or the field values to start this query after, in order of the query's order by.
 	 * @return The created query.
 	 */
-	public function startAfter (snapshotOrVarArgs:DocumentSnapshot):Query;
+	public function startAfter(snapshotOrVarArgs:DocumentSnapshot):Query;
 
 	/**
 	 * Creates a new query where the results start at the provided document (inclusive). The starting position is relative to the order of the query.
@@ -62,7 +62,7 @@ extern class Query {
 	 * @param snapshotOrVarArgs The snapshot of the document you want the query to start at or the field values to start this query at, in order of the query's order by.
 	 * @return The created query.
 	 */
-	public function startAt (snapshotOrVarArgs:DocumentSnapshot):Query;
+	public function startAt(snapshotOrVarArgs:DocumentSnapshot):Query;
 
 	/**
 	 * Creates a new query that returns only documents that include the specified fields and where the values satisfy the constraints provided.
@@ -71,7 +71,7 @@ extern class Query {
 	 * @param value The value for comparison.
 	 * @return The created query.
 	 */
-	@:overload(function (fieldPath:String, opStr:String, value:Any):Query {
+	@:overload(function(fieldPath:String, opStr:String, value:Any):Query {
 	})
-	public function where (fieldPath:String, opStr:String, value:Any):Query;
+	public function where(fieldPath:String, opStr:String, value:Any):Query;
 }

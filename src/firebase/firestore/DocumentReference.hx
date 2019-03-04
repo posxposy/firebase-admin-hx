@@ -31,13 +31,13 @@ extern class DocumentReference {
 	 * @param collectionPath A slash-separated path to a collection.
 	 * @return The CollectionReference instance.
 	 */
-	public function collection (collectionPath:String):CollectionReference;
+	public function collection(collectionPath:String):CollectionReference;
 
 	/**
 	 * Deletes the document referred to by this DocumentReference
 	 * @return Promise containing void
 	 */
-	public function delete ():Promise<Void>;
+	public function delete():Promise<Void>;
 
 	/**
 	 * Reads the document referred to by this DocumentReference.
@@ -45,7 +45,7 @@ extern class DocumentReference {
 	 * but it may return cached data or fail if you are offline and the server cannot be reached.
 	 * @return A promise that resolves with a DocumentSnapshot containing the current document contents.
 	 */
-	public function get ():Promise<DocumentSnapshot>;
-	public function set (data:Dynamic, ?options:SetOptions):Promise<Void>;
-	public function update (args:Rest<Dynamic>):Promise<Void>;
+	public function get():Promise<DocumentSnapshot>;
+	public function set(data:Dynamic, ?options:SetOptions):Promise<Void>;
+	public function update(args:Rest<Dynamic>):Promise<Void>;
 }

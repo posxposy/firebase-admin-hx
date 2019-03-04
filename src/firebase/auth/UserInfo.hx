@@ -8,5 +8,5 @@ extern class UserInfo {
 	public var photoURL:String;
 	public var providerId:String;
 	public var uid:String;
-	public function toJSON ():Dynamic;
+	public function toJSON():Dynamic;
 }
