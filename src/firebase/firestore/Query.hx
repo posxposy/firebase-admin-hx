@@ -44,8 +44,7 @@ extern class Query {
 	 * @param directionStr
 	 * @return Optional direction to sort by (asc or desc). If not specified, the default order is ascending.
 	 */
-	@:overload(function(fieldPath:FieldPath, ?directionStr:String):Query {
-	})
+	@:overload(function(fieldPath:FieldPath, ?directionStr:String):Query {})
 	public function orderBy(fieldPath:String, ?directionStr:String):Query;
 
 	/**
@@ -71,7 +70,6 @@ extern class Query {
 	 * @param value The value for comparison.
 	 * @return The created query.
 	 */
-	@:overload(function(fieldPath:String, opStr:String, value:Any):Query {
-	})
+	@:overload(function(fieldPath:String, opStr:String, value:Any):Query {})
 	public function where(fieldPath:String, opStr:String, value:Any):Query;
 }

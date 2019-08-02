@@ -1,6 +1,6 @@
 package firebase.messaging;
 
-import js.Promise;
+import js.lib.Promise;
 
 @:native('admin.messaging.Messaging')
 extern class Messaging {

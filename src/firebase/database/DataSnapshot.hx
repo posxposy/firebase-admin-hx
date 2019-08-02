@@ -7,7 +7,7 @@ extern class DataSnapshot {
 	public function child(path:String):DataSnapshot;
 	public function exist():Bool;
 	public function exportVal():Dynamic;
-	public function forEach(action:DataSnapshot -> Void):Bool;
+	public function forEach(action:DataSnapshot->Void):Bool;
 	public function getPriority(path:String):Bool;
 	public function hasChild(path:String):Bool;
 	public function hasChildren():Bool;

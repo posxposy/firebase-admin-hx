@@ -16,6 +16,7 @@ extern class Firestore {
 	 * @return A promise that is resolved once the network has been disabled.
 	 */
 	public function disableNetwork():Promise<Void>;
+
 	public function doc(documentPath:String):DocumentReference;
 	public function enableNetwork():Promise<Void>;
 	public function enablePersistence():Promise<Void>;

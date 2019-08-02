@@ -1,7 +1,7 @@
 package firebase.auth;
 
 import firebase.auth.CreateRequest;
-import js.Promise;
+import js.lib.Promise;
 
 @:native('admin.auth.Auth')
 extern class Auth {

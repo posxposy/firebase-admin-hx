@@ -46,6 +46,7 @@ extern class DocumentReference {
 	 * @return A promise that resolves with a DocumentSnapshot containing the current document contents.
 	 */
 	public function get():Promise<DocumentSnapshot>;
+
 	public function set(data:Dynamic, ?options:SetOptions):Promise<Void>;
 	public function update(args:Rest<Dynamic>):Promise<Void>;
 }

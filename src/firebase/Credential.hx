@@ -3,11 +3,9 @@ package firebase;
 @:native('admin.credential')
 extern class Credential {
 	public static function applicationDefault():AppCredential;
-	@:overload(function(serviceAccountData:Dynamic):AppCredential {
-	})
+	@:overload(function(serviceAccountData:Dynamic):AppCredential {})
 	public static function cert(name:String):AppCredential;
-	@:overload(function(object:Dynamic):AppCredential {
-	})
+	@:overload(function(object:Dynamic):AppCredential {})
 	public static function refreshToken(tokenPath:String):AppCredential;
 }
 

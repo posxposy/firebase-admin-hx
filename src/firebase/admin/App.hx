@@ -4,7 +4,7 @@ import firebase.auth.Auth;
 import firebase.database.Database;
 import firebase.messaging.Messaging;
 import firebase.storage.Storage;
-import js.Promise;
+import js.lib.Promise;
 
 @:native('admin.app.App')
 extern class App {
